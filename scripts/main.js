@@ -36,3 +36,18 @@ for (let i = 10; i >= 0; i--) {
     }
 }
 */
+
+/* Exercise 4 
+const friends = ["jérémy", "hassan", "vincent"];
+
+let times = 1;
+let friendName = "";
+
+for (let i = 0; i < friends.length; i++) {
+    
+    friendName = friends[i] + " ";
+    console.log(friendName.repeat(times));
+    console.log(friends[i]);
+    times++;
+}
+*/
