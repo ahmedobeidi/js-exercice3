@@ -4,19 +4,19 @@ let numberOfSpaces = 4;
 
 for (let i = 1; i <= iterations; i++) {
 
-let star = "";
-let space = "";
+    let star = "";
+    let space = "";
 
-for (let j = 0; j < numberOfSpaces; j++) {
-    space += " ";
-}
+    for (let j = 0; j < numberOfSpaces; j++) {
+        space += " ";
+    }
 
-for (let x = 0; x < i; x++) {
-    star += "* "
-}
+    for (let x = 0; x < i; x++) {
+        star += "* "
+    }
 
-console.log(space, star);
-numberOfSpaces--;
+    console.log(space, star);
+    numberOfSpaces--;
 }
 */
 
@@ -89,9 +89,9 @@ while (true) {
 }
 */
 
-/* Exercise 5.3 
+/* Exercise 5.3 and 5.4
 let number = window.prompt("Enter a number:");
-number = parseInt(number);
+number = Number(number);
 let end = number + 10;
 
 for (let i = number + 1; i <= end; i++) {
@@ -99,5 +99,35 @@ for (let i = number + 1; i <= end; i++) {
 }
 */
 
+/* Exercise 5.5 
+let input = window.prompt("Enter a number:");
+input = Number(input);
+let result = "";
 
- 
+for (let i = 1; i <= 10; i++) {
+    result += `${input} * ${i} = ${input * i}\n`;
+}
+window.alert(result);
+*/
+
+/* Exercise 5.6 
+let input = window.prompt("Enter a number:");
+input = parseInt(input);
+let result = "";
+let sum = 0;
+
+for (let i = 1; i <= input; i++) {
+    sum += i;
+    if (i === input) {
+        result += `+ ${i} = ${sum}`;
+    }
+    else if (i === input - 1) {
+        result += `${i} `;
+    }
+    else {
+        result += `${i} + `;
+    }
+}
+
+console.log(result);
+*/
