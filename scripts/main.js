@@ -142,3 +142,27 @@ for (let i = 1; i <= number; i++) {
 }
 window.alert(result);
 */
+
+/* Exercise 5.8 
+let arr = [];
+let biggestNumber;
+let index;
+
+for (let i = 1; i <= 5; i++) {
+    let number = window.prompt(`Enter number ${i}:`);
+    number = Number(number);
+    arr.push(number);
+}
+
+biggestNumber = arr[0];
+index = 0;
+
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > biggestNumber) {
+        biggestNumber = arr[i];
+        index = i;
+    }
+}
+
+window.alert(`The biggest number is: ${biggestNumber} at index: ${index}`);
+*/
