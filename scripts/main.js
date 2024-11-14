@@ -59,7 +59,6 @@ while (true) {
     
     if ((guess > 3) || (guess < 1)) {
         window.alert("Wrong number, Try again!");
-        continue;
     }
     else if (guess === number) {
         window.alert("Success!");
@@ -68,4 +67,37 @@ while (true) {
 }
 */
 
+/* Exercise 5.2 
+while (true) {
+    const number = 13;
+    let guess = window.prompt("Enter a number between 10 and 20");
+    guess = parseInt(guess);
 
+    if (guess === number) {
+        window.alert("You did it");
+        break;
+    }
+    if (guess > 20) {
+        window.alert("Smaller");
+    }
+    else if (guess < 10) {
+        window.alert("Greater");
+    }
+    else {
+        window.alert("Wrong number, try again");
+    }
+}
+*/
+
+/* Exercise 5.3 
+let number = window.prompt("Enter a number:");
+number = parseInt(number);
+let end = number + 10;
+
+for (let i = number + 1; i <= end; i++) {
+    console.log(i);
+}
+*/
+
+
+ 
