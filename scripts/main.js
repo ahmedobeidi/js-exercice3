@@ -38,7 +38,7 @@ for (let i = 10; i >= 0; i--) {
 */
 
 /* Exercise 4 
-const friends = ["jérémy", "hassan", "vincent"];
+const friends = ["jérémy", "hassan", "vincent", "Ahmed"];
 
 let times = 1;
 let friendName = "";
@@ -47,7 +47,25 @@ for (let i = 0; i < friends.length; i++) {
     
     friendName = friends[i] + " ";
     console.log(friendName.repeat(times));
-    console.log(friends[i]);
     times++;
 }
 */
+
+/* Exercise 5.1 
+while (true) {
+    const number = 1;
+    let guess = window.prompt("Enter a number between 1 and 3");
+    guess = parseInt(guess);
+    
+    if ((guess > 3) || (guess < 1)) {
+        window.alert("Wrong number, Try again!");
+        continue;
+    }
+    else if (guess === number) {
+        window.alert("Success!");
+        break;
+    }
+}
+*/
+
+
