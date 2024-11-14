@@ -131,3 +131,14 @@ for (let i = 1; i <= input; i++) {
 
 console.log(result);
 */
+
+/* Exercise 5.7 
+let number = window.prompt("Enter a number:");
+number = parseInt(number);
+let result = 1;
+
+for (let i = 1; i <= number; i++) {
+    result = result * i;
+}
+window.alert(result);
+*/
