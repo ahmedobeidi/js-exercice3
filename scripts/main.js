@@ -205,14 +205,12 @@ while (true) {
         rest = budget - priceOfProducts;
         continue;
     }
-    console.log(rest);
     break;
 }
 
 euros.forEach(function(euro) {
-    let x;
     if (rest / euro >= 1) {
-        x = Math.floor(rest / euro);
+       let x = Math.floor(rest / euro);
         alert(x + "billet de " + euro);
         rest = rest % euro;
     }
@@ -229,3 +227,25 @@ euros.forEach(function(euro) {
 // 1 BILLET DE 5
 // 0
 
+/* Exercise 5.11
+const numberOfHorseStarting = prompt("Horses starting: ");
+const numberOfHorsePlayed = prompt("Horses played: ");
+
+const factN = fact(numberOfHorseStarting);
+const factNP = fact((numberOfHorseStarting - numberOfHorsePlayed))
+
+x= factN / factNP;
+y = factN / (fact(numberOfHorsePlayed) * factNP);
+
+alert(`Dans l’ordre : une chance sur ${x} de gagner \nDans le désordre : une chance sur ${y} de gagner`);
+
+function fact(n) { 
+    let res = 1; 
+
+    if(n === 0)
+        return 1;
+    for (let i = 2; i <= n; i++) 
+        res = res * i; 
+    return res; 
+}
+*/
