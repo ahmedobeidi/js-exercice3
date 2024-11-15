@@ -148,7 +148,7 @@ let arr = [];
 let biggestNumber;
 let index;
 
-for (let i = 1; i <= 5; i++) {
+for (let i = 1; i <= 20; i++) {
     let number = window.prompt(`Enter number ${i}:`);
     number = Number(number);
     arr.push(number);
@@ -165,4 +165,29 @@ for (let i = 1; i < arr.length; i++) {
 }
 
 window.alert(`The biggest number is: ${biggestNumber} at index: ${index}`);
+*/
+
+/* Exercise 5.9 
+let arr = [];
+let biggestNumber;
+let index;
+
+for (let i = 1; i > 0; i++) {
+    let number = window.prompt(`Enter number ${i}:`);
+    number = Number(number);
+    arr.push(number);
+    if (number === 0) { break }
+}
+
+biggestNumber = arr[0];
+index = 0;
+
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > biggestNumber) {
+        biggestNumber = arr[i];
+        index = i;
+    }
+}
+
+window.alert(`The biggest number is: ${biggestNumber} at index: ${index+1}`);
 */
