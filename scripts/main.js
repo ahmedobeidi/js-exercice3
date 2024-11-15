@@ -191,3 +191,41 @@ for (let i = 1; i < arr.length; i++) {
 
 window.alert(`The biggest number is: ${biggestNumber} at index: ${index+1}`);
 */
+
+/* Exercise 5.10 
+const euros = [100, 50, 20, 10, 5, 2, 1];
+
+const priceOfProducts = parseInt(window.prompt("Enter the price of the products:"));
+let budget = parseInt(window.prompt("Enter your budget:"));
+let rest = budget - priceOfProducts;
+
+while (true) {
+    if (budget < priceOfProducts) {
+        budget = parseInt(window.prompt("Enter your budget:"));
+        rest = budget - priceOfProducts;
+        continue;
+    }
+    console.log(rest);
+    break;
+}
+
+euros.forEach(function(euro) {
+    let x;
+    if (rest / euro >= 1) {
+        x = Math.floor(rest / euro);
+        alert(x + "billet de " + euro);
+        rest = rest % euro;
+    }
+});
+*/
+
+// 175
+// 3 BILLET DE 50
+// 75
+// 1 BILLET DE 50
+// 25
+// 1 BILLET DE 20
+// 5
+// 1 BILLET DE 5
+// 0
+
